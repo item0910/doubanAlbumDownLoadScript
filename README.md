@@ -2,7 +2,7 @@
 批量下载豆瓣相册
 ## 使用演示
 浏览豆瓣相册时, 点击右上角批量下载本页图片
-![豆瓣下载本页图片.jpg](https://s2.loli.net/2023/04/08/tPqB7cSX36k8TWQ.png)
+![豆瓣相册下载使用演示.jpg](https://s2.loli.net/2023/04/09/ZWR6JvHwOixs4ul.jpg)
 
 ## 安装方式
 - 点击链接直接安装脚本
