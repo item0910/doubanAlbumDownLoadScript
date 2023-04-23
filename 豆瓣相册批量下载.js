@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Batch Download for Douban Photo Albums
+// @name         豆瓣相册批量下载
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  This script enables batch download of original images for Douban's movie album (movie.douban.com)
+// @version      0.3
+// @description  This script enables batch download of original images for Douban's album
 // @author       @Item
 // @match        *movie.douban.com/*/photos*
 // @match        *www.douban.com/photos/album/*
@@ -12,8 +12,10 @@
 // @compatible   firefox
 // @compatible   opera
 // @compatible   safari
+// @license MT
 // ==/UserScript==
 
+/* jshint esversion: 8 */
 
 (async function () {
 	'use strict';
@@ -41,7 +43,7 @@
 						download_$a.href = blob_url;
 						download_$a.click();
 						window.URL.revokeObjectURL(blob_url);
-						setTimeout(resolve, 500);
+						setTimeout(resolve, 300);
 					});
 			});
 		}
